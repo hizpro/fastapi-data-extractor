@@ -1,3 +1,4 @@
+# .github/workflows/python-app.yml
 name: Python Application CI
 
 on:
@@ -6,20 +7,33 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python 3.11
+    - name: 🚚 Checkout Code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python 3.11
       uses: actions/setup-python@v4
       with:
         python-version: "3.11"
-    - name: Install dependencies
+
+    - name: 📦 Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest httpx fastapi uvicorn beautifulsoup4 pydantic
+        # Pastikan pytest dan httpx (untuk TestClient) selalu terinstal
+        pip install pytest httpx fastapi
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Test with pytest
+
+    - name: 🧪 Run Automated Tests
+      env:
+        # 'github.workspace' merujuk ke root folder proyek di server GitHub
+        # Ini krusial agar import 'from app.main' di file tes tidak error
+        PYTHONPATH: ${{ github.workspace }}
       run: |
         pytest
