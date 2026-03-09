@@ -25,4 +25,4 @@ A high-performance, production-ready REST API built with **FastAPI** and **HTTPX
 4. Access documentation: `http://127.0.0.1:8000/docs`
 
 ---
-🇮🇩 [Baca Dokumentasi dalam Bahasa Indonesia di sini](./README.id.md)
+🇮🇩 [Baca Dokumentasi dalam Bahasa Indonesia di sini](./README.ID.md)
