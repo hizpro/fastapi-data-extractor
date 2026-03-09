@@ -9,5 +9,5 @@ Saya membangun ini sekedar ingin berbagi, ini terstuktur dan dilengkapi midlewar
 * **Cepat:** Menggunakan sistem asinkron agar tidak antre.
 * **Transparan:** Memberitahu pengguna berapa lama waktu yang dibutuhkan untuk mengambil data.
 * **Tahan Banting:** Tidak mudah eror meski website target berantakan.
+[Info teknis di sini](./README.md)
 
-[Informasi teknis lainnya...]
