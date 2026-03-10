@@ -1,3 +1,12 @@
+<div align="center">
+
+[![CI Build](https://github.com/hizpro/fastapi-data-extractor/actions/workflows/python-app.yml/badge.svg)](https://github.com/hizpro/fastapi-data-extractor/actions)
+![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)
+![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
+
+</div>
 # 🚀 Enterprise Data Extractor API
 
 A high-performance, production-ready REST API built with **FastAPI** and **HTTPX**. Designed for developers who need fast, reliable, and asynchronous web data extraction with built-in performance telemetry.
